@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lydia Lam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="portfoliostyle.css"/>
+  <!-- <link rel="icon" href="http://i58.tinypic.com/302rtyg.png" type="image/png"> -->
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+  <!-- banner at top of website -->
+  <div class="banner">
+    <h1> <a id="top">LYDIA LAM</a><h1>
+  </div>
+
+  <!-- navigation buttons -->
+  <div class="tab">
+    <button class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openPage(event, 'About Me')">About Me</button>
+    <button class="tablinks" onclick="openPage(event, 'Contact')">Contact</button>
+    <button class="tablinks" onclick="openPage(event, 'Fun Stuff')">Fun Stuff</button>
+  </div>
+
+
+  <!-- home button page -->
+  <div id="Home" class="tabcontent">
+    <center>
+    <h2 id="welcome">Welcome!</h2>
+
+    <p> I'm Lydia Lam :)</p>
+    <br></br>
+    <img id="hello" src="https://media.giphy.com/media/XYot661SFS62c/giphy.gif" title="hello"/>
+    <!-- <iframe id="welcomegif" src="https://giphy.com/embed/l4JyOCNEfXvVYEqB2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tipsyelves-welcome-high-five-l4JyOCNEfXvVYEqB2">via GIPHY</a></p> -->
+    <br></br>
+
+    <img id="welcomegif" src="https://media.giphy.com/media/l4JyOCNEfXvVYEqB2/giphy.gif" title="welcome!" style="display: none;"/>
+    <br></br>
+    <button id="welcomeClickMe" onclick="showImage()">Click Me!</button>
+    <br></br>
+    <br></br>
+  </center>
+  </div>
+
+  <!-- about me button page -->
+  <div id="About Me" class="tabcontent">
+    <h2>About Me</h2>
+
+    <!-- divide page into fun facts and random stuff -->
+    <div class="row">
+      <div class="column">
+
+        <!-- fun facts column -->
+        <h3 id="columntitle"><u>Fun Facts</u></h3>
+        <br></br>
+        <section class="container">
+          <div class="one">
+            <p>● I play violin! I started when I was 5 years old and was
+              originally inspired by my older brother</p>
+              <br></br>
+              <p>● I have also played lacrosse since I was 11 years old.
+              My friend introduced me to the sport after I had stopped doing karate after 3 years</p>
+          </div>
+          <div class="two">
+            <img id="funFactImage" src="https://images.fineartamerica.com/images-medium-large/goffriller-violin-color-sam-hymas.jpg" title="Violin"/>
+            <br></br>
+            <img id="funFactImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdcLFNK0SEuhIMDevLUo_QLPxf1ydU0_U9nV-0DwCn1woD240z" title="lacrosse sticks"/>
+          </div>
+      </div>
+
+      <!-- random stuff column -->
+      <div class="column">
+        <h3 id="columntitle"><u>???</u></h3>
+        <img src="http://i.stack.imgur.com/SBv4T.gif" title="this slowpoke moves" />
+      </div>
+
+      <!-- goes to top of the page when clicked -->
+      <a href="#top" id="gotop">Go to top</a>
+    </div>
+    <br></br>
+  </div>
+
+
+  <!-- contact button page -->
+  <div id="Contact" class="tabcontent">
+    <h2>Contact</h2>
+    <p>lalalallalallaa</p>
+  </div>
+
+  <!-- fun stuff button page -->
+  <div id="Fun Stuff" class="tabcontent">
+    <h2>Fun Stuff</h2>
+    <center>
+    <img src="https://media.giphy.com/media/5wnTplXoE2S1W/giphy.gif" title="arthur fist with white guy blinking"/>
+    <img src="https://meme.xyz/uploads/posts/t/l-2262-this-is-a-pigeon.jpg" title="pigeon change my mind"/>
+  </center>
+  </div>
+
+<script src="portfolio.js"></script>
+
+</body>
+
+</html>
