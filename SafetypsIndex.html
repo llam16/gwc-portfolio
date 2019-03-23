@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<script src="components/loader.js">
+	</script>
+	<script src="lib/onsenui/js/onsenui.min.js">
+	</script>
+
+	<link rel="stylesheet" href="components/loader.css">
+	<link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+	<link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="script.js">
+		// Page init event
+    
+	</script>
+
+</head>
+
+<body>
+	<ons-navigator id="navigator" page="homepage.html"></ons-navigator>
+
+	<ons-template id="homepage.html">
+		<ons-page id="home-page">
+			<ons-toolbar>
+				<div class="center">Welcome to Safetyps!</div>
+			</ons-toolbar>
+
+			<div class="content" style="text-align: center">
+        <br>
+        <p>Safetyps is a place to get help. What's wrong?</p>
+        <br>
+        <ons-button id="push-button-1">Violence and Abuse </ons-button>
+				<br><br><br>
+				<ons-button id="push-button-2">Workplace Issue</ons-button>
+				<br><br><br>
+        <ons-button id="push-button-3">Confidence Booster</ons-button>
+        <br><br><br>
+        <ons-button id="push-button-4">Health Issue</ons-button>
+        <br><br><br>
+        <ons-button id="push-button-5">About Us</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="WorkPlace.html">
+    <ons-page id="wp-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Home</ons-back-button></div>
+        <div class="center">Workplace Issue</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>This is the second page.</p>
+        <ons-button id="push-button-wp">"You're too emotional..."</ons-button>
+        <ons-button id="push-button-wp2">Equal Pay</ons-button>
+        <br><br>
+        <ons-button id="pop-button">Go back</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="ConfidenceBooster.html">
+    <ons-page id="cb-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Home</ons-back-button></div>
+        <div class="center">Page 3</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>This is the third page.</p>
+        <br><br>
+        <a href="https://open.spotify.com/user/priyajainrani/playlist/7cygViVET7uP8jeay777bj?si=yp0Rr1hKSkW0zPDWnEpitw" class="push-button-cb">MV XXtras: Confidence Booster</a>
+        
+        <br><br>
+        <ons-button id="pop-button-2">Go back</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+    <ons-template id="HealthIssue.html">
+    <ons-page id="hi-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Home</ons-back-button></div>
+        <div class="center">Health Issue</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>This is the health page.</p>
+        
+        <br><br>
+        <ons-button id="pop-button-3">Go back</ons-button>
+
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="AboutUs.html">
+    <ons-page id="au-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Home</ons-back-button></div>
+        <div class="center">About Us</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>MV XXtras is a group created by 4 Mountain View High School juniors at XX Hacks 2019: Abby Jensen, Claire Pare, Lydia Lam, and Priya Jain. It was created with the intention of providing tips in different situations, whether it is at school, the workplace, or even at home. Some of the situations covered are violence and abuse, gender stereotypes, women’s health, and late nights.</p>
+        <ons-button id="pop-button-4">Go back</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="Emotional.html">
+    <ons-page id="emo-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Home</ons-back-button></div>
+        <div class="center"></div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>This is the fourth page.</p>
+        <div id="sequence"></div>
+        <button onclick="changeText()">Advice</button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+</body>
+</html>
